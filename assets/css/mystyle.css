@@ -1,0 +1,409 @@
+/**
+ * Brianna Buttaccio
+ * 1/29/2017
+ * ISTE-240-01
+ * EX01
+ **/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i');
+	
+body{
+	background-color: #fdfdfd;
+	font-family: Verdana, sans-serif;
+    margin-top: 0px;
+    text-align: justify;
+	margin: 0px;
+}
+p{
+	color: #222222;
+}
+h2{
+	font-family: 'Arsenal', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0px;
+	color: #222222;
+}
+
+#wrapper{
+	margin: 0px auto;
+    min-width: 320px;
+	margin-bottom: 15px;
+}
+
+#banner{
+	position: relative;
+ 	min-width: 320px;
+    height: 200px;
+    background-image: url(../images/banner.png);
+    margin: 0px auto;
+    background-size: cover;
+    background-position: 50% 75%;
+    box-shadow: inset #fdfdfd 0px -100px 100px 1px;
+}
+
+#logo{
+	position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+#logo h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+    color: #8b008b;
+    font-size: 80px;
+    margin: 0px auto;
+	padding: 15px 0px 0px 0px;
+    text-shadow: white 0px 0px 35px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: -.02em;
+}
+
+#bottomcol{
+ 	clear: left;
+	padding-bottom: 0px;
+	padding: 40px 0px;
+	overflow: auto;
+	overflow: hidden;
+}
+
+#content{
+	width: 85%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+#homeBackground{
+    border-top: 3px solid #222222;
+    border-bottom: 3px solid #222222;
+    margin-top: 20px;
+    padding: 0px;
+    height: 40px;
+	min-width: 280px;
+	z-index: 5;
+	position: relative;
+}
+
+#home{
+	font-weight: bold;
+    height: 31px;
+    width: 90%;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0px 5%;
+    max-width: 600px;
+}
+
+#home a{
+	margin-top: -9px;
+    text-decoration: none;
+    padding: 0 1%;
+    color: #8b008b;
+    float: left;
+    width: 23%;
+    text-align: center;
+}
+
+#home a:hover{
+	color: #808080;
+}
+
+#home a:active{
+	color: #D3D3D3;
+}
+
+nav #current a{
+    font-size: 120%;
+    margin-top: -12px;
+	color: #222222;
+}
+
+#pic{
+    float:left;
+    margin: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+#pic img{
+	max-width: 250px;
+	width: 100%;
+	box-shadow: 3px 3px 8px 0px;
+	border-radius: 2px;
+}
+
+#body{
+    margin:0;
+	color: #222222;
+	line-height: 1.5;
+}
+footer{
+    font-size: 12px;
+    color: #8b008b;
+    font-style: italic;
+    text-align: center;
+	padding-bottom: 20px;
+    position: relative;
+}
+
+p{
+    margin-top:0px;
+    font-size: 100%;
+}
+
+.divider{
+	clear: both;
+	height: 40px;
+}
+
+
+/*** HOMEPAGE ONLY ***/
+
+#homepage header{
+    height: 100vh;
+	min-height: 300px;
+	margin-bottom: -120px;
+}
+#homepage #logo{
+	bottom: 140px;
+}
+#homepage #banner{
+	height: 100%;
+}
+#homepage #banner{
+    box-shadow: inset #fdfdfd 0px -340px 330px 1px;
+}
+#welcome{
+	font-family: 'Arsenal', sans-serif;
+	max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+	font-weight: bold;
+	color: #222222;
+}
+
+/*** CONTACT US ONLY ***/
+
+#contact-us #content{
+	text-align: center;
+}
+
+/*** PROJECTS ONLY ***/
+#projects .project-container{
+	min-width: 212px;
+    min-height: 212px;
+    float: left;
+    margin: 20px;
+    width: calc(33.33% - 40px);
+}
+#projects .project {
+    width: 200px;
+    height: 200px;
+    background-color: #fdfdfd;
+    border: 6px #222222 solid;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+#projects .project:hover{
+	background-color: #8b008b;
+	border: 6px #8b008b solid;
+	-webkit-transition: .5s;
+	-ms-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+#projects .project a {
+    color: #222222;
+    text-decoration: none;
+    line-height: 25px;
+    padding: 75px 30px 0px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    -webkit-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+#projects .project:hover a {
+    color: #fdfdfd;
+}
+
+/*** ANIMATIONS ***/
+
+p#body, #welcome{
+	animation-name: inFromBottom1;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1.5s;
+}
+#projects .project-container{
+	animation-name: inFromBottom;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1.5s;
+}
+#contact-us #bottomcol p{
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1.5s;
+}
+#projects .project-container:nth-child(1), #contact-us #bottomcol p:nth-child(1) {
+	animation-name: inFromBottom1;
+}
+#projects .project-container:nth-child(2), #contact-us #bottomcol p:nth-child(2) {
+	animation-name: inFromBottom2;
+}
+#projects .project-container:nth-child(3), #contact-us #bottomcol p:nth-child(3) {
+	animation-name: inFromBottom3;
+}
+#projects .project-container:nth-child(4), #contact-us #bottomcol p:nth-child(4) {
+	animation-name: inFromBottom4;
+}
+
+@media (max-width: 1204px){
+	#projects .project-container{
+		width: calc(50% - 40px);
+	}
+	#project-group{
+		max-width: 510px;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 740px){
+	#wrapper{
+		margin-bottom: 0px;
+	}
+	#logo h1{
+		font-size: 40px;
+		line-height: 1em;
+		padding-bottom: 10px;
+	}
+	#homepage #logo h1{
+		font-size: 40px;
+		line-height: 1em;
+		padding-bottom: 30px;
+	}
+	#pic {
+		float: none;
+		margin-right: 0;
+		text-align: center;
+	}
+	#pic img {
+		max-width: 400px;
+	}
+	#welcome {
+		font-size: 24px;
+		margin: 20px;
+	}
+	#home {
+		height: auto;
+	}
+	footer{
+		clear: both;
+	}
+	#projects .project-container{
+		width: calc(100% - 40px);
+	}
+	nav #current a, #home a{
+		margin-top: 0px;
+	}
+	#homeBackground{
+		max-width: none;
+		position: absolute;
+		background: #fdfdfd;
+		height: auto;
+		padding: 0px 0px 20px 0px;
+		margin-top: 20px;
+		width: 100%;
+		border-top: 3px solid #222222;
+		border-bottom: 3px solid #222222;
+		margin-bottom: 20px;
+	}
+	#content{
+		margin-top: 120px;
+	}
+	#homepage header {
+		margin-bottom: -170px;
+	}
+	#homepage #logo {
+		bottom: 160px;
+	}
+	#homepage #banner{
+		box-shadow: inset #fdfdfd 0px -280px 240px 1px;
+	}
+	#banner{
+		box-shadow: inset #fdfdfd 0px -60px 60px 1px;
+		height: 150px;
+	}
+	#home a{
+		display: block;
+		clear: none;
+		line-height: 40px;
+		float: left;
+		width: 50%;
+		padding: 0px
+	}
+}
+@keyframes inFromBottom1 {
+  0% {
+    transform: translateY(120%);
+	opacity: 0;
+  }
+  20% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+	opacity: 1;
+  }
+}
+@keyframes inFromBottom2 {
+  0% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  40% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+	opacity: 1;
+  }
+}
+@keyframes inFromBottom3 {
+  0% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  60% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+	opacity: 1;
+  }
+}
+@keyframes inFromBottom4 {
+  0% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  80% {
+    transform: translateY(200%);
+	opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+	opacity: 1;
+  }
+}
